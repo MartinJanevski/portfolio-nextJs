@@ -5,7 +5,7 @@ export const fetchPageInfo = async () => {
     `${process.env.NEXT_PUBLIC_BASE_URL}/api/getPageInfo`
   );
   console.log(res);
-  const data = await res.json();
+  const data = await res?.json();
 
   const pageInfo: PageInfo = data.pageInfo;
 

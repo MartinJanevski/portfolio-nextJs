@@ -4,8 +4,10 @@ import { schemaTypes } from "portfolio-martin/schemas";
 
 export const config = {
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
+  projectId: "1jwmybzg",
   useCdn: process.env.NODE_ENV === "production",
+  version: "v2021-10-21",
+  apiVersion: "2022-02-03",
   schema: {
     types: schemaTypes,
   },
